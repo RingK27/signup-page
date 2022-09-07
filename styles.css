@@ -4,15 +4,12 @@
     box-sizing: border-box;   
     font-family: 'Tajawal', sans-serif;   
 }
-
 a:link{
     color: crimson;    
 }
-
 a:visited {
     color: pink;
 }
-
 .main-container {
     display: flex;
     flex-direction: row; 
@@ -35,17 +32,18 @@ a:visited {
             width: 100%;         
             background-color: rgba(50, 50, 50, 0.616);  
             color: white;  
-            padding-left: 10px;                                  
+            padding-left: 10px;   
+            min-width: 100%;                               
         }
-        #logo-img{
-            rotate: -20deg;
-            height: 90%;            
-        }
-        #logo-text {
-            line-height: 150px;
-            font-family: 'Staatliches', cursive;
-            font-size: 40px;
-        }
+            #logo-img{
+                rotate: -20deg;
+                height: 90%;            
+            }
+            #logo-text {
+                line-height: 150px;
+                font-family: 'Staatliches', cursive;
+                font-size: 40px;
+            }
     .content-div {
         display: flex;        
         flex-direction: column;

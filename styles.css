@@ -1,30 +1,52 @@
 * {
     border: 0px;
     margin: 0px;
-    box-sizing: border-box;    
+    box-sizing: border-box;   
+    font-family: 'Tajawal', sans-serif;   
 }
+
+a:link{
+    color: crimson;    
+}
+
+a:visited {
+    color: pink;
+}
+
 .main-container {
     display: flex;
     flex-direction: row; 
     height: 100vh;   
 }
-    #image-div {
+    .image-div {
         display: flex;               
         height: 100vh;
         position: relative;
     }
-        #cosmo-img {
+        .cosmo-img {
             height: 100%;                                
         }
-        #logo-div {
+        .logo-div {
+            display: flex;
+            flex-direction: row;;
             position: absolute;
             top: 50%;
             height: 150px;
             width: 100%;         
             background-color: rgba(50, 50, 50, 0.616);  
-            color: white;                          
+            color: white;  
+            padding-left: 10px;                                  
         }
-    #content-div {
+        #logo-img{
+            rotate: -20deg;
+            height: 90%;            
+        }
+        #logo-text {
+            line-height: 150px;
+            font-family: 'Staatliches', cursive;
+            font-size: 40px;
+        }
+    .content-div {
         display: flex;        
         flex-direction: column;
         padding-left: 30px;

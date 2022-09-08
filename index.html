@@ -19,8 +19,47 @@
                 <p id="logo-text">CANECOSMO</p>
             </div>
         </div>
-        <div class="content-div">            
-            <p>Hai già un account? <a href="">E allora logga!</a></p>
+        <div class="content-div">  
+            <p id="disclaimer">Questo non è un reale servizio online! Tuttavia, sai benissimo che avresti bisogno di qualcosa del genere nellatua vita, quindi:</p>
+            <p id="signup-text">ISCRIVITI DAI!!!</p> 
+            <div id="form-container">   
+                <form action="#" method="post">
+                    <div class="form-div">
+                        <div class="form-content">
+                            <label for="first_name">Nome</label><br>
+                            <input type="text" name="first_name" id="first_name" minlength="1">
+                        </div>              
+                        <div class="form-content">
+                            <label for="last_name">Cognome</label><br>
+                            <input type="text" name="last_name" id="last_name" minlength="1">
+                        </div>        
+                    </div>
+                    <div class="form-div">
+                        <div class="form-content">
+                            <label for="email">Email</label><br>
+                            <input type="email" name="mail" id="mail" minlength="1">
+                        </div>
+                        <div class="form-content">
+                            <label for="phone-number">Telefono</label><br>
+                            <input type="number" name="phone" id="phone" minlength="1">
+                        </div>      
+                    </div>
+                    <div class="form-div">
+                        <div class="form-content">
+                            <label for="user_password">Password</label><br>
+                            <input type="password" id="user_password" name="user_password" minlength="5" required>
+                        </div>
+                        <div class="form-content">
+                            <label for="password_conf">Ripeti password</label><br>
+                            <input type="password" id="password_conf" name="password_conf" minlength="5" required>
+                        </div>                            
+                    </div>
+                    <div class="form-content">
+                        <button type="submit" id="submit-btn">Crea un account</button>
+                    </div>                                
+                </form> 
+            </div>     
+            <br><p id="login-text">Hai già un account? <a href="">E allora logga!</a></p>
         </div>
     </main>    
 <script src="scripts.js"></script>    

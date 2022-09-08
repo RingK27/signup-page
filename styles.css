@@ -4,12 +4,25 @@
     box-sizing: border-box;   
     font-family: 'Tajawal', sans-serif;   
 }
-a:link{
+a:link {
     color: crimson;    
 }
 a:visited {
     color: pink;
 }
+input {
+    border-radius: 5px;
+    border: 2px solid rgba(255, 127, 80, 0);
+}
+input:focus {    
+    border: 2px solid coral;
+    outline: 0px;    
+}
+input:invalid {
+    border: 2px solid red;
+    outline: 0px;
+}
+
 .main-container {
     display: flex;
     flex-direction: row; 
@@ -21,28 +34,30 @@ a:visited {
         position: relative;
     }
         .cosmo-img {
-            height: 100%;                                
+            height: 100vh;                                
         }
         .logo-div {
             display: flex;
             flex-direction: row;;
             position: absolute;
             top: 50%;
-            height: 150px;
+            height: 30vh;
             width: 100%;         
             background-color: rgba(50, 50, 50, 0.616);  
             color: white;  
-            padding-left: 10px;   
+            padding-left: 10px; 
+            padding-right: 10px;  
             min-width: 100%;                               
         }
-            #logo-img{
+            #logo-img{                
                 rotate: -20deg;
-                height: 90%;            
+                line-height: 30vh;
+                height: 25vh;            
             }
             #logo-text {
-                line-height: 150px;
+                line-height: 30vh;
                 font-family: 'Staatliches', cursive;
-                font-size: 40px;
+                font-size: 9vh;
             }
     .content-div {
         display: flex;        
@@ -51,4 +66,54 @@ a:visited {
         background-color: rgb(79, 78, 97);
         width: 100vw; 
         color: white; 
+        align-items: center;
+        justify-content: center;
     }
+        #form-container { 
+            display: flex;                        
+            background-color: rgba(169, 168, 197, 0.9);            
+            box-shadow: 5px 5px rgb(222, 222, 237);
+            width: 40vw;
+            align-items: center;
+            justify-content: center; 
+            padding-bottom: 10px;  
+            border-radius: 30px;                            
+        }
+            .form-div {
+                display: flex;
+                flex-direction: row;                                                            
+            }
+                .form-content{
+                    padding: 20px;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                }
+                #submit-btn {
+                    color: aliceblue;
+                    background-color: coral;
+                    border-radius: 5px;
+                    box-shadow: 2px 2px rgb(255, 255, 255);
+                    height: 6vh;
+                    font-size: 4vh;
+                }
+                    #submit-btn:hover {
+                        color: coral;
+                        background-color: rgb(255, 255, 255);
+                        border-radius: 5px;
+                        box-shadow: 4px 4px coral;
+                        transition: 300ms;
+                        cursor: pointer;
+                    }
+            #disclaimer {
+                font-size: 4vh;       
+                text-align: center;
+                padding-top: 10px;
+            }
+            #signup-text {
+                font-size: 6vh;
+                font-weight: bolder;
+                color:coral;            
+            }
+            #login-text {
+                font-size: 3vh;            
+            }

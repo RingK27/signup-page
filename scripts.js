@@ -7,8 +7,7 @@ submit_button.addEventListener("click", submit_func);
 
 function submit_func() {
     if (password.value != password_confirmation.value) {
-        errore_text.innerText = "le password devono corrispondere";
-        return;
+        alert("le password devono corrispondere");
     }
 }
 

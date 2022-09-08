@@ -27,21 +27,21 @@
                     <div class="form-div">
                         <div class="form-content">
                             <label for="first_name">Nome</label><br>
-                            <input type="text" name="first_name" id="first_name" minlength="1">
+                            <input type="text" name="first_name" id="first_name" minlength="1" required>
                         </div>              
                         <div class="form-content">
                             <label for="last_name">Cognome</label><br>
-                            <input type="text" name="last_name" id="last_name" minlength="1">
+                            <input type="text" name="last_name" id="last_name" minlength="1" required>
                         </div>        
                     </div>
                     <div class="form-div">
                         <div class="form-content">
                             <label for="email">Email</label><br>
-                            <input type="email" name="mail" id="mail" minlength="1">
+                            <input type="email" name="mail" id="mail" minlength="1" required>
                         </div>
                         <div class="form-content">
                             <label for="phone-number">Telefono</label><br>
-                            <input type="number" name="phone" id="phone" minlength="1">
+                            <input type="number" name="phone" id="phone" minlength="1" required>
                         </div>      
                     </div>
                     <div class="form-div">
@@ -55,7 +55,8 @@
                         </div>                            
                     </div>
                     <div class="form-content">
-                        <button type="submit" id="submit-btn">Crea un account</button>
+                        <button id="submit-btn">Crea un account</button>
+                        <p id="error" style="color: red; padding-top: 2px"></p>
                     </div>                                
                 </form> 
             </div>     

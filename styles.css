@@ -18,11 +18,6 @@ input:focus {
     border: 2px solid coral;
     outline: 0px;    
 }
-input:invalid {
-    border: 2px solid red;
-    outline: 0px;
-}
-
 .main-container {
     display: flex;
     flex-direction: row; 
